@@ -9,15 +9,9 @@ const app=express();
 var corsOptions = {
     origin: "http://localhost:3001"
   };
+   app.use(cors(corsOptions));
   
-  
-  app.use(cors(corsOptions));
-  // parse requests of content-type - application/json
-  app.use(bodyParser.json());
-  
-  // parse requests of content-type - application/x-www-form-urlencoded
-  app.use(bodyParser.urlencoded({ extended: true }));
-  
+ 
 //Connect db
 app.use(express.json());
 connectDb();
