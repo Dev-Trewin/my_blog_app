@@ -19,6 +19,7 @@ connectDb();
 app.get('/',(req,res)=>{res.send('Api runnning')});
 require("./routes/user.route")(app);
 require('./routes/profile.route')(app);
+
 require('./routes/auth.route')(app);
 require('./routes/post.route')(app);
 
