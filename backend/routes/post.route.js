@@ -1,3 +1,5 @@
+const Auth=require('../middleware/auth');
 module.exports=app=>{
-    app.get("/api/post",()=>{console.log("post api")});
+    const post=require("../controller/Post.controller")
+    app.get("/api/post",Auth,post.CreatePost);
 }
