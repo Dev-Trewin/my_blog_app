@@ -4,9 +4,10 @@
   "description": "my blog from scratch",
   "main": "server.js",
   "scripts": {
-    "test": "jest --watchAll",
-    "start-dev": "nodemon server",
-    "start": "node server.js"
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+    
   },
   "author": "Roger Trewin",
   "license": "ISC",

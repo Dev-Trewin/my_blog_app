@@ -1,7 +1,7 @@
 const express=require("express");
 const bodyParser=require('body-parser')
 const cors=require('cors');
-const connectDb=require('../backend/config/db');
+const connectDb=require('./config/db');
 const userRoute=require('./routes/user.route');
 
 const app=express();
