@@ -6,17 +6,12 @@ const userRoute=require('./routes/user.route');
 
 const app=express();
 
-var corsOptions = {
-    origin: "http://localhost:3001"
-  };
-   app.use(cors(corsOptions));
-  
  
 //Connect db
 app.use(express.json());
 connectDb();
 //server listen for request
-app.get('/',(req,res)=>{res.send('Api runnning')});
+
 require("./routes/user.route")(app);
 require('./routes/profile.route')(app);
 
