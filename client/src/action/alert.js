@@ -6,4 +6,7 @@ dispatch({
     type:SET_ALERT,
     payload:{msg,alertType,id}
 });
+
+//remove alert
+setTimeout(()=>dispatch({type:REMOVE_ALERT,payload:id}),500);
 }
