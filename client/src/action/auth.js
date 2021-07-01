@@ -24,7 +24,7 @@ export const loadUser = () => async dispatch => {
 
 //Register User
 export const register = ({ name, email, password }) => async dispatch => {
-    console.log("body.name:" + name);
+
     const config = {
         headers: {
             'Content-Type': 'application/json'
